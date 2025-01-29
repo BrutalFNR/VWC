@@ -1,0 +1,25 @@
+1. Use a single source repository
+2. Frequent check-ins to main branch
+  Integrating code into trunk early and often, avoiding sub-branches and working with main branch only. Use small segments of code merge into
+  main branch as frequently as possible. Do not merge more than 1 change at a time.
+3. Automated builds
+  The CI processes should automatically package and compile the code into a usable application.
+4. Self-Testing Builds
+  Testing Scripts should ensure that failure of test fails the build. Use static pre-build testing scripts to check code for integrity, quality, and security
+  compliance. Only allow code that passes static tests into the build.
+5. Frequent Iterations
+  Multiple commits to the repository results in fewer places for conflicts to hide. Make small, frequent iterations rather than major changes
+  This allows changes to be rolled back if there's problems or conflicts
+6. Stable Testing Environment
+  Code should be tested in a cloned version of the production environment. Create a cloned environment that's as close as possible to the real environment. 
+  Use rigorous testing scripts to detect and identify bugs that slipped through the initial pre-build testing process.
+7. Maximum Visibility
+  Every developer should be able to access the latest executables and see any changes made to the repository. Information in the repository should be visible to all. 
+  Use version control to manage handoffs so developers know which is the latest version. 
+  Maximum visibility means everyone can monitor progress and identify potential concerns.
+8. Predictable deployments anytime
+  Deployments should be so routine and low-risk that the team is comfortable doing them anytime. 
+  CI/CD testing and verification processes should be rigorous and reliable, giving the team confidence to deploy updates at any time. 
+  Frequent deployments incorporating limited changes also pose lower risks and can be easily rolled back.
+
+https://about.gitlab.com/topics/ci-cd/
